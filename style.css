@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(217, 54%, 11%);
+}
+.container-card {
+  background-color: hsl(216, 50%, 16%);
+  width: 350px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 18px;
+  margin-bottom: 50px;
+  position: relative;
+  box-shadow: rgb(17, 18, 19) 0px 20px 30px -10px;
+}
+/*images*/
+.cube-img img {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+}
+.cube-img img:hover {
+  cursor: pointer;
+  opacity: 0;
+}
+.img-hover img {
+  width: 300px;
+  height: 300px;
+  margin-top: 25px;
+  border-radius: 8px;
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+.img-hover img:hover {
+  opacity: 1;
+}
+
+/*FIN img*/
+.info {
+  width: 300px;
+}
+.info-txt h1 {
+  font-size: 24px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.info-txt h1:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+.info-txt p {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.info-more {
+  display: flex;
+  justify-content: space-between;
+}
+.eth {
+  color: hsl(178, 100%, 50%);
+  display: flex;
+}
+.eth img {
+  margin-right: 10px;
+}
+
+.clock {
+  color: hsl(215, 51%, 70%);
+  display: flex;
+}
+.clock .days {
+  margin-left: 8px;
+}
+.clock img {
+  width: 20px;
+}
+.info-author {
+  width: 300px;
+  display: flex;
+  margin-top: 20px;
+  padding-top: 20px;
+  font-size: 17px;
+  border-top: 1px solid hsl(215, 32%, 27%);
+}
+.info-author img {
+  margin-right: 20px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+}
+.info-author .author {
+  margin-top: 5px;
+  color: hsl(215, 51%, 70%);
+}
+.info-author span {
+  color: hsl(0, 0%, 100%);
+  font-weight: 300;
+}
+.info-author span:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
